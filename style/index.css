@@ -1,1 +1,66 @@
-/* Add CSS styling here */
+ header {
+    background-color: rgb(211, 100, 211);
+    padding: 20px;
+    margin-bottom: 15px;
+ }
+
+ .secondsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ }
+
+ .description {
+    padding: 20px;
+    width: 50%;
+ }
+  .rows {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .portfolio-array {
+    text-align: center;
+  }
+
+  button {
+    background-color: white;
+    color:black;
+    border: black solid 1px;
+    padding: 5px 10px;
+    text
+  }
+  
+  button:hover {
+    background-color: #FF99DD;
+    color: white;
+    border: white solid 1px;
+  }
+
+  button a {
+    text-decoration: none;
+    color: inherit;
+  }
+ 
+ footer {
+  /* background-color: rgb(175, 21, 175); */
+  background-color: rgb(211, 100, 211);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  /* display: flex; */
+  /* justify-content: space-around; */
+ }
+
+ /* nav.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } */
+
+ footer a:hover {
+    color: #4f4f4f;
+  }
