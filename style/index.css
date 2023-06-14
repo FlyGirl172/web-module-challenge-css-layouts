@@ -1,7 +1,20 @@
- header {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; */
+   max-width: 100px; 
+   /* border: 1px solid blue; */
+}
+
+hmtl {
+  font-size: 62.5%;
+}
+
+header {
     background-color: rgb(211, 100, 211);
     padding: 20px;
     margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
  }
 
  .secondsection {
@@ -13,12 +26,14 @@
  .description {
     padding: 20px;
     width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
  }
   .rows {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
   }
 
   .portfolio-array {
@@ -30,7 +45,7 @@
     color:black;
     border: black solid 1px;
     padding: 5px 10px;
-    text
+    font-family: Verdana, Geneva, Tahoma, sans-serif
   }
   
   button:hover {
@@ -42,6 +57,7 @@
   button a {
     text-decoration: none;
     color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
   }
  
  footer {
@@ -50,17 +66,95 @@
   color: #fff;
   text-align: center;
   padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
   /* display: flex; */
   /* justify-content: space-around; */
  }
 
- /* nav.main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  } */
-
  footer a:hover {
     color: #4f4f4f;
+  }
+
+  @media(max-width: 800px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%
+    }
+    button {
+      width: 40%;
+      margin: 1% 0;
+    }
+    .secondsection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .secondsection h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    .description {
+      width: 90%;
+    }
+    .rows {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .rows div {
+      width: 40%;
+      margin: 4% 0;
+    }
+  }
+
+  @media(max-width: 500px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%
+    }
+    button {
+      width: 40%;
+      margin: 1% 0;
+    }
+    .secondsection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .secondsection h2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
+    .description {
+      width: 90%;
+    }
+    .rows {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .rows div {
+      width: 40%;
+      margin: 4% 0;
+    }
   }
